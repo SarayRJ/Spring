@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- INYECCION DE DEPENDENCIAS VIA CONSTRUCTOR, hay que respetar el orden de los
+atributos aquí, mientras que con via property no hari falta ya que acceden a los
+metodos set-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="saludamos" class="es.studium.PrimerBean.Saludo">
+		<constructor-arg name="saludo" value="¡Mi primer 
+bean!"></constructor-arg>
+	</bean>
+</beans>
